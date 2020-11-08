@@ -4,14 +4,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 3rem;
-    background-color:  $pink;
+    background-color:  $white;
 
     .logo{
         font-family: 'Roboto', sans-serif;
         text-transform: uppercase;
         font-weight: 600;
         font-size: 3rem;
-        color:  white;
+        color:  $pink;
         text-decoration: none;
     }
 
@@ -27,15 +27,15 @@
             padding: 2rem 3rem;
             font-family: 'Roboto', sans-serif;
             font-weight: 500;
-            color:  white;
+            color:  $pink;
             text-decoration: none;
             text-transform: uppercase;
             height: 100%;
             transition: all .2s;
 
             &:hover{
-                background-color: white;
-                color: $pink;
+                background-color: $pink;
+                color: $white;
             }
         }
         
