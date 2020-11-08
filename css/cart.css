@@ -168,52 +168,75 @@ a {
   background-image: linear-gradient(90deg, #3d009e 0%, rgba(152, 0, 181, 0.5) 100%), url(https://lithub.com/wp-content/uploads/2019/07/used-books-store-2.jpg);
 }
 
-.book-card {
+.cart_items {
+  width: 100%;
+}
+
+.cart-card {
+  padding: 1rem 2rem;
+  padding-right: 5rem;
+  margin-bottom: 2rem;
   background-color: #debcff;
-  border-radius: 3px;
-  padding: 2rem;
   display: flex;
-  flex-direction: column;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  width: 22%;
-  height: 43rem;
-  margin-bottom: 2rem;
+  border-radius: 3px;
 }
 
-.book-card_name {
-  font-size: 2rem;
-  text-align: center;
-}
-
-.book-card_image {
+.cart-card_first {
+  display: flex;
+  align-items: center;
   width: 70%;
 }
 
-.book-card_price {
+.cart-card_data {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  justify-content: space-between;
+}
+
+.cart-card_data_name {
+  font-size: 2rem;
+  color: #320a5e;
+}
+
+.cart-card_data_price {
   color: green;
-  font-size: 1.5rem;
-}
-
-.book-card .button_sm {
-  border-radius: 20rem;
-  padding: .5rem 2rem;
-  border: none;
-  background-color: white;
-  color: #581b98;
   font-size: 1.4rem;
-  transition: all .2s;
 }
 
-.book-card .button_sm:hover {
-  background-color: #581b98;
+.cart-card_image {
+  width: 7rem;
+}
+
+.cart-card .quantity {
+  font-size: 1.4rem;
+}
+
+.cart-card .far {
+  font-size: 3rem;
   color: white;
-  cursor: pointer;
-  transform: scale(1.05);
 }
 
-.book-card .button_sm:active, .book-card .button_sm:focus {
-  outline: none;
+.cart-card .far:hover {
+  color: #320a5e;
+  cursor: pointer;
+}
+
+.cart-card_total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-card_total_amount {
+  text-align: center;
+  font-size: 3rem;
+  color: #320a5e;
+  margin-bottom: 4rem;
 }
 
 .footer {
@@ -405,78 +428,34 @@ a {
   color: white;
 }
 
-.first {
-  width: 100%;
-  height: 80vh;
-  background-image: linear-gradient(to right bottom, #581b98, transparent), url(../images/library-interior-empty-room-reading-with-books-wooden-shelves/1722.jpg);
-  background-size: cover;
-  background-position: center;
+.above_cart {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
-.first_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 70%;
-}
-
-.first_content_heading {
+.above_cart h1 {
   font-size: 4rem;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 3rem;
+  color: #320a5e;
 }
 
-.first_content form {
-  width: 50%;
+.above_cart p {
+  font-size: 1.4rem;
+  color: #320a5e;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart_items {
+  width: 74%;
+}
+
+.cart_total {
+  width: 25%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
-
-.first_content #search_input {
-  border-radius: 10rem;
-  border: none;
-  width: 70%;
-  padding: 1rem 2rem;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.first_content #search_input:focus, .first_content #search_input:active {
-  border: none;
-  outline: none;
-}
-
-.e-book {
-  padding: 5rem;
-  height: 30rem;
-  width: 100%;
-  background-image: linear-gradient(to right bottom, #3d009e 0%, rgba(152, 0, 181, 0.5) 100%), url(https://www.groovypost.com/wp-content/uploads/2012/12/Kindle_Reader_Featured.jpg);
-  background-size: cover;
-}
-
-.e-book_heading {
-  font-size: 5rem;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  text-transform: uppercase;
-}
-
-.data {
-  margin-top: 2rem;
-  width: 40%;
-}
-
-.list-img {
-  width: 30%;
-}
-
-.info {
-  font-size: 20px;
-  color: #0F1923;
-}
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=cart.css.map */

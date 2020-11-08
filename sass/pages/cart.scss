@@ -1,0 +1,42 @@
+@import "../abstract/functions";
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+@import "../base/base";
+@import "../base/typography";
+@import "../base/utilities";
+
+@import "../components/button";
+@import "../components/cart_card";
+
+@import "../layouts/footer";
+@import "../layouts/navbar";
+
+
+.above_cart{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    h1{
+        font-size: 4rem;
+        color: $pink-dark;
+    }
+    p{
+        font-size: 1.4rem;
+        color: $pink-dark;
+    }
+}
+
+.cart{
+    display: flex;
+    justify-content: space-between;
+    &_items{
+        width: 74%;
+    }
+
+    &_total{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
